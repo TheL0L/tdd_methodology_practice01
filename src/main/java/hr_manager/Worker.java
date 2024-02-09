@@ -185,6 +185,21 @@ public class Worker implements Comparable<Worker>
     }
 
     /**
+     * Returns a string representation of the worker.
+     *
+     * @return A string representation containing worker details.
+     */
+    @Override
+    public String toString() {
+        return "ID: " + id +
+                ", Name: " + firstName + " " + lastName +
+                ", Email: " + email +
+                ", Phone: " + phone +
+                ", Address: " + address +
+                ", Wage: " + wage + " NIS";
+    }
+
+    /**
      * Compare workers based on their wage.
      *
      * @param otherWorker The worker to compare with.
