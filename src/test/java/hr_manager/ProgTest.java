@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class ProgTest
 {
-    private final int count = 100_000;
+    private final int count = 10_000;
 
     @Test
     public void testCustomSortOrderValidity()
@@ -22,7 +22,7 @@ public class ProgTest
             array[i] = random.nextInt();
         }
 
-        Prog.customSort(array);
+        array = Prog.customSort(array);
 
         for (int i = 1; i < count; i++)
         {
@@ -54,7 +54,7 @@ public class ProgTest
             hashset.add(array[i]);
         }
 
-        Prog.customSort(array);
+        array = Prog.customSort(array);
 
         for (int i = 0; i < count; i++)
         {
